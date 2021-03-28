@@ -1,0 +1,40 @@
+<div class="topchart">
+  <div class="content">
+    <div class="tittle">
+      <p>TOP CHART</p>
+    </div>
+    <div class="column-name">
+      <span>Name</span><span>Total XP</span>
+    </div>
+    <div class="all-content">
+      <div class="main-content">
+        <mat-list class="user-list">
+          <mat-list-item *ngFor="let user of users">
+            <div class="list-content">
+              <div class="list-wrapper">
+                <img matListAvatar
+                     class="avatar"
+                     src="{{ user.userPic }}"
+                     alt="User avatar">
+                <div class="user-name">
+                  <span>{{ user.firstName }}</span>
+                  <span>{{ user.lastName }}</span>
+                </div>
+              </div>
+              <span class="xp">{{ user.xp }}XP</span>
+            </div>
+          </mat-list-item>
+        </mat-list>
+      </div>
+      <div class="chart-block">
+        <mat-list class="chart-list">
+          <mat-list-item *ngFor="let user of users">
+            <div class="chart"
+                 [style.background-color]="user.color"
+                 [style.width]="user.width"></div>
+          </mat-list-item>
+        </mat-list>
+      </div>
+    </div>
+  </div>
+</div>

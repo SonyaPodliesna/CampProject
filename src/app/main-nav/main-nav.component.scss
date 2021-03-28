@@ -1,0 +1,29 @@
+mat-sidenav {
+  width: 250px;
+  padding: 15px;
+}
+
+mat-toolbar {
+  background-color: #4B4B49;
+}
+
+.sidenav_btn {
+  background-color: #69B518;
+  color: #ffffff;
+  margin: 5px;
+}
+
+.mat-drawer {
+  background-color: #4B4B49;
+  color: #ffffff;
+}
+
+.main-content {
+  padding: 20px;
+  background-color: #323232;
+  min-height: 100%;
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}

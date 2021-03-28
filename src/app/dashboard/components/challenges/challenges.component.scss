@@ -1,0 +1,58 @@
+.challenges {
+  width: 100%;
+  height: 100%;
+  background-color: #4B4B49;
+}
+
+.tittle {
+  text-align: left;
+  font-size: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .show-more {
+    background-color: #69B518;
+    color: #ffffff;
+    font-size: 11px;
+    border-radius: 0;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  overflow-y: auto;
+  height: calc(100% - 62px);
+  margin-right: 10px;
+}
+
+.event-image {
+  .event-avatar {
+    width: 70px;
+    height: 70px;
+    margin: 2px;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #54575f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #69B518;
+}

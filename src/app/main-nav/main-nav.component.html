@@ -1,0 +1,34 @@
+<mat-sidenav-container fullscreen>
+    <mat-sidenav mode="over"
+                 #sidenav>
+      GMFCTN!
+      <button mat-icon-button
+              (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <div class="sidenav_btns">
+        <button mat-button
+                class="sidenav_btn">Edit profile</button><br>
+        <button mat-button
+                class="sidenav_btn">Change password</button><br>
+        <button mat-button
+                class="sidenav_btn">Log out</button>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar>
+        <button mat-icon-button
+                (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        GMFCTN!
+        <span class="toolbar-spacer"></span>
+        <a mat-flat-button class="navigation-item" routerLink="app-dashboard" routerLinkActive="router-link-active">Dashboard</a>
+        <span class="toolbar-spacer"></span>
+        <mat-icon>account_circle</mat-icon>
+      </mat-toolbar>
+      <div class="main-content">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
