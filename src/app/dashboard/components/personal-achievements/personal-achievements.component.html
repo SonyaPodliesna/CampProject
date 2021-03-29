@@ -6,16 +6,16 @@
   </div>
   <div class="content">
     <mat-list>
-      <mat-list-item *ngFor="let personAchiv of personAchivs">
+      <mat-list-item *ngFor="let personalAchievement of personalAchievements">
         <img matListAvatar
              class="avatar"
-             src="{{ personAchiv.pic }}"
+             src="{{ personalAchievement.pic }}"
              alt="Picture of achievement">&nbsp;&nbsp;
-        <span class="achievname">{{ personAchiv.name }}</span>&nbsp;&nbsp;
+        <span class="achiev-name">{{ personalAchievement.name }}</span>&nbsp;&nbsp;
         <img class="coin"
              src="./assets/coin.png"
              alt="Picture of coin">&nbsp;
-        <span class="xp"> + {{ personAchiv.xp }}</span>
+        <span class="xp"> + {{ personalAchievement.xp }}</span>
       </mat-list-item>
     </mat-list>
   </div>

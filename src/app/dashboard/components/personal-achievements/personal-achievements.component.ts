@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./personal-achievements.component.scss']
 })
 export class PersonalAchievementsComponent implements OnInit {
-  personAchivs = [
+  public personalAchievements = [
     { pic: './assets/achievement-icon.png', name: 'Exoft Turbo Power', xp: '15 xp' },
     { pic: './assets/achievement-icon.png', name: 'Exoft Turbo Power', xp: '15 xp' },
     { pic: './assets/achievement-icon.png', name: 'Exoft Skylark Power', xp: '20 xp' },

@@ -1,9 +1,10 @@
 <mat-grid-list cols="5"
-              [gutterSize]="'15px'"
+               [gutterSize]="'15px'"
                rowHeight="140px">
   <mat-grid-tile [colspan]="4"
                  [rowspan]="1">
-    <app-greeting class="greetings" style="height: 100%; width: 100%;"></app-greeting>
+    <app-greeting class="greetings"
+                  style="height: 100%; width: 100%;"></app-greeting>
   </mat-grid-tile>
   <mat-grid-tile [colspan]="1"
                  [rowspan]="5">
@@ -15,11 +16,13 @@
   </mat-grid-tile>
   <mat-grid-tile [colspan]="1"
                  [rowspan]="2">
-    <app-thank-you class="thankyou" style="height: 100%; width: 100%;"></app-thank-you>
+    <app-thank-you class="thankyou"
+                   style="height: 100%; width: 100%;"></app-thank-you>
   </mat-grid-tile>
   <mat-grid-tile [colspan]="2"
                  [rowspan]="2">
-    <app-top-chart class="topchart" style="height: 100%; width: 100%;"></app-top-chart>
+    <app-top-chart class="topchart"
+                   style="height: 100%; width: 100%;"></app-top-chart>
   </mat-grid-tile>
   <mat-grid-tile [colspan]="1"
                  [rowspan]="2">
@@ -30,23 +33,4 @@
     <app-challenges style="height: 100%; width: 100%;"></app-challenges>
   </mat-grid-tile>
 </mat-grid-list>
-<!-- 
-<table style="min-height: 500px; height: 100%; width: 100%;">
-  <tr>
-    <td colspan="3" style="background-color: aqua; width: 75%; height: 25%; ">
-      <app-greeting style="height: 100%; width: 100%;"></app-greeting>
-    </td>
-    <td rowspan="3" style="background-color: aqua; width: 25%;"></td>
-  </tr>
 
-  <tr>
-    <td style="background-color: aqua; "></td>
-    <td style="background-color: aqua; "></td>
-    <td style="background-color: aqua; "></td>
-  </tr>
-
-  <tr>
-    <td style="background-color: aqua; "></td>
-    <td colspan="2" style="background-color: aqua; "></td>
-  </tr>
-</table> -->

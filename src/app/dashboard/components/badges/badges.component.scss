@@ -7,12 +7,6 @@
   justify-content: left;
 }
 
-.text {
-  font-size: 10px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
 .tittle {
   text-align: left;
   font-size: 12px;
@@ -24,32 +18,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .number-of-achievement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    .number {
+      font-size: 96px;
+      line-height: 96px;
+      color: #69B518;
+    }
+
+    .badges-text {
+      color: #ffffff;
+      margin-left: 8px;
+    }
+
+  }
 }
 
-.number-of-achievement {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+.text {
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 
-  .number {
-    font-size: 96px;
-    line-height: 96px;
+  .dot {
     color: #69B518;
+    border-radius: 10px;
+    width: 15px;
+    height: 15px;
   }
-
-  .badges-text {
-    color: #ffffff;
-    margin-left: 8px;
-  }
-
-}
-
-
-
-.dot {
-  color: #69B518;
-  border-radius: 10px;
-  width: 15px;
-  height: 15px;
 }

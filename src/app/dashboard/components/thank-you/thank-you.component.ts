@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./thank-you.component.scss']
 })
 export class ThankYouComponent implements OnInit {
- user = {userPic: './assets/user-pic.jpg', firstName: 'Taras', lastName: 'Sava'}
+  public user = { userPic: './assets/user-pic.jpg', firstName: 'Taras', lastName: 'Sava' }
   constructor() { }
 
   ngOnInit(): void {

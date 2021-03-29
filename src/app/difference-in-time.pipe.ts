@@ -11,7 +11,7 @@ export class DifferenceInTimePipe implements PipeTransform {
     console.log(difference)
 
     const diffInMinutes = difference / 1000 / 60 / 60;
-    
+
     if (diffInMinutes >= 60) {
       return `${Math.round(diffInMinutes / 60)} hours ago`
     }

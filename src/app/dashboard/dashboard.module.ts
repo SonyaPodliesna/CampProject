@@ -1,5 +1,6 @@
 // Modules
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MaterialModule } from '../shared/material/material.module';
 import { Routes, RouterModule } from '@angular/router';
 import { PipesModule } from '../pipes.module'
@@ -14,7 +15,7 @@ import { GreetingComponent } from './components/greeting/greeting.component';
 import { PersonalAchievementsComponent } from './components/personal-achievements/personal-achievements.component';
 import { ThankYouComponent } from './components/thank-you/thank-you.component';
 import { TopChartComponent } from './components/top-chart/top-chart.component';
-import { CommonModule } from '@angular/common';
+
 
 
 const routes: Routes = [
