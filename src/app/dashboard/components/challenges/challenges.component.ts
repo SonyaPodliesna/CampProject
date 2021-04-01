@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./challenges.component.scss']
 })
 export class ChallengesComponent implements OnInit {
-
-  public events = [
+  events = [
     { avatar: '' },
     { avatar: '' },
     { avatar: '' },

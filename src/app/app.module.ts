@@ -6,10 +6,7 @@ import { MaterialModule } from './shared/material/material.module';
 
 // Components
 import { AppComponent } from './app.component';
-import { MainNavComponent } from './main-nav/main-nav.component';
 import { CommonModule } from '@angular/common';
-
-
 
 @NgModule({
   declarations: [

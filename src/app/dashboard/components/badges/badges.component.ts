@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./badges.component.scss']
 })
 export class BadgesComponent implements OnInit {
-  public personelAchievements = [
+  personelAchievements = [
     { pic: './assets/achievement-icon.png', name: 'Exoft Turbo Power', xp: '15 xp' },
     { pic: './assets/achievement-icon.png', name: 'Exoft Turbo Power', xp: '15 xp' },
     { pic: './assets/achievement-icon.png', name: 'Exoft Skylark Power', xp: '20 xp' },

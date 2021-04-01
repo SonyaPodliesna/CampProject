@@ -1,29 +1,79 @@
-mat-sidenav {
-  width: 250px;
-  padding: 15px;
+.tittle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 30%;
+
+  .menu-icon {
+    margin-right: 0px;
+  }
 }
 
-mat-toolbar {
-  background-color: #4B4B49;
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .user-pic{
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin: 20px;
+  }
+
+  .user-fullname{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 18px;
+  }
 }
 
-.sidenav_button {
+.sidenav_buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+
+  .sidenav_button {
+  font-size: 12px;
   background-color: #69B518;
   color: #ffffff;
+  width: 55%;
+  line-height: 25px;
   margin: 5px;
 }
-
-.mat-drawer {
-  background-color: #4B4B49;
-  color: #ffffff;
 }
 
-.main-content {
-  padding: 20px;
-  background-color: #323232;
-  min-height: 100%;
+.main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    margin: 0 10px;
+  }
+
+  .green-text {
+    color: #69B518;
+  }
+
+  .white-text {
+    color: #ffffff;
+  }
 }
 
-.toolbar-spacer {
-  flex: 1 1 auto;
+.routers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+
+  .navigation-item {
+    font-size: 18px;
+  }
 }
+

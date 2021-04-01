@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-top-chart',
@@ -6,16 +6,13 @@ import { Component, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./top-chart.component.scss']
 })
 export class TopChartComponent implements OnInit {
-
-  public users = [
+  users = [
     { userPic: './assets/user-pic.jpg', firstName: 'Taras', lastName: 'Yarchak', xp: 120, color: '#4aa2e0', width: '' },
     { userPic: './assets/user-pic.jpg', firstName: 'Ostap', lastName: 'Roik', xp: 115, color: '#9148c2', width: '' },
     { userPic: './assets/user-pic.jpg', firstName: 'Tanya', lastName: 'Gogina', xp: 70, color: '#d99842', width: '' },
     { userPic: './assets/user-pic.jpg', firstName: 'Taras', lastName: 'Sava', xp: 15, color: '#78e9e7', width: '' },
     { userPic: './assets/user-pic.jpg', firstName: 'Maksym', lastName: 'Nykolaichuk', xp: 0, color: '#4aa2e0', width: '' }
   ]
-
-
 
   constructor() { }
 

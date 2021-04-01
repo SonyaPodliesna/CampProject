@@ -5,7 +5,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   {
     path: '',
-    loadChildren: () => import('./main-nav/main-nav.module').then(module => module.MainNavModule)
+    loadChildren: () => import('./layout/layout.module').then(module => module.LayoutModule)
   },
   { path: '**', redirectTo: 'dashboard', pathMatch: 'full' }
 ];
