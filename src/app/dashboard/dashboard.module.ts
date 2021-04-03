@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from '../shared/material/material.module';
 import { Routes, RouterModule } from '@angular/router';
 import { PipesModule } from '../shared/pipes/pipes.module'
+import { ThankYouModule } from '../shared/components/thank-you/thank-you.module'
 
 
 // Components
@@ -13,7 +14,6 @@ import { ChallengesComponent } from './components/challenges/challenges.componen
 import { ExoftAchievementsComponent } from './components/exoft-achievements/exoft-achievements.component';
 import { GreetingComponent } from './components/greeting/greeting.component';
 import { PersonalAchievementsComponent } from './components/personal-achievements/personal-achievements.component';
-import { ThankYouComponent } from './components/thank-you/thank-you.component';
 import { TopChartComponent } from './components/top-chart/top-chart.component';
 
 
@@ -34,14 +34,14 @@ const routes: Routes = [
     ExoftAchievementsComponent,
     GreetingComponent,
     PersonalAchievementsComponent,
-    ThankYouComponent,
     TopChartComponent,
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
     MaterialModule,
-    PipesModule
+    PipesModule,
+    ThankYouModule,
   ]
 })
 export class DashboardModule { }

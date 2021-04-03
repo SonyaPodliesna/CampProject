@@ -1,0 +1,23 @@
+<mat-grid-list cols="3" [gutterSize]="'15px'" rowHeight="300px">
+
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <app-last-achievements class="last-achievements"></app-last-achievements>
+    </mat-grid-tile>
+  
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <app-total-achievements class="total-achievements"></app-total-achievements>
+    </mat-grid-tile>
+  
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <app-user class="user-component"></app-user>
+    </mat-grid-tile>
+  
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+      <app-full-list-achievements class="full-list-achievements"></app-full-list-achievements>
+    </mat-grid-tile>
+  
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <app-thank-you class="thank-you"></app-thank-you>
+    </mat-grid-tile>
+    
+  </mat-grid-list>

@@ -5,20 +5,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class DifferenceInTimePipe implements PipeTransform {
 
-//   transform(value: Date): string {
-//     const difference = Math.abs(new Date().getTime() - new Date(value).getTime());
-//     const diffInMinutes = difference / 1000 / 60 / 60;
-    
-//     if (diffInMinutes >= 60) {
-//       return `${Math.round(diffInMinutes / 60)} hours ago`;
-//     } 
-//       return `${diffInMinutes} mins ago`;
-//   }
-
 transform(value: Date): string {
   const difference = Math.abs(new Date().getTime() - new Date(value).getTime());
   const diffInMinutes = difference / 1000 / 60;
-  console.log(diffInMinutes);
 
   if (diffInMinutes >= 60 && diffInMinutes < 1440) {
     return `${Math.round(diffInMinutes / 60)} hours ago`;

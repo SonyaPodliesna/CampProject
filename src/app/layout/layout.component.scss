@@ -1,42 +1,47 @@
 mat-sidenav {
-    width: 250px;
-    padding: 15px;
+  width: 250px;
+  padding: 15px;
+}
+
+mat-toolbar {
+  background-color: #4B4B49;
+}
+
+.sidenav_button {
+  background-color: #69B518;
+  color: #ffffff;
+  margin: 5px;
+}
+
+.mat-drawer {
+  background-color: #4B4B49;
+  color: #ffffff;
+}
+
+.main-content {
+  padding: 20px;
+  background-color: #323232;
+  min-height: 100%;
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.right-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .user-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
   }
-  
-  mat-toolbar {
-    background-color: #4B4B49;
-  }
-  
-  .sidenav_button {
-    background-color: #69B518;
-    color: #ffffff;
-    margin: 5px;
-  }
-  
-  .mat-drawer {
-    background-color: #4B4B49;
-    color: #ffffff;
-  }
-  
-  .main-content {
-    padding: 20px;
-    background-color: #323232;
-    min-height: 100%;
-  }
-  
-  .toolbar-spacer {
-    flex: 1 1 auto;
-  }
-  
-  .right-menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  
-    .user-pic {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-    }
-  }
-  
+}
+
+.router-link-active {
+  border-top: #69B518 solid 2px;
+  border-radius: 0;
+  color: #69B518;
+}

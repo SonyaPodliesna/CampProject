@@ -1,12 +1,12 @@
-<div class="personal-achiv">
+<div class="last-achievements">
 
   <div class="tittle">
-    <span class="name">PERSONAL ACHIEVEMENTS</span>
+    <span class="name">LAST ACHIEVEMENTS</span>
     <a mat-flat-button class="request-button">Request</a>
   </div>
 
   <div class="content">
-    <mat-list class="personal-achievement-list">
+    <mat-list class="last-achievement-list">
       <mat-list-item *ngFor="let personalAchievement of personalAchievements">
 
         <div class="list-item">
@@ -17,7 +17,7 @@
 
           <div class="coins">
             <img class="coin" src="./assets/coin.png" alt="Picture of coin" />&nbsp;
-            <span class="xp"> + {{ personalAchievement.xp }}</span>
+            <span class="xp"> + {{ personalAchievement.xp }} XP</span>
           </div>
         </div>
 

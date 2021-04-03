@@ -21,7 +21,7 @@
   }
 
   .column-name {
-    width: 40%;
+    width: 45%;
     color: #69B518;
     display: flex;
     flex-direction: row;
@@ -29,22 +29,6 @@
     border-bottom: solid 1px #69B518;
     margin: 0 10px;
   }
-
-}
-
-.mat-list-item {
-  width: 230px;
-  font-size: 10px;
-  color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.mat-list-base {
-  padding: 0px;
-  width: 100%;
-  height: 100%;
 }
 
 .user-name {
@@ -53,33 +37,14 @@
   margin: 5px;
 }
 
-.list-content .mat-list-base .mat-list-item .mat-list-avatar {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.mat-list-base {
-  display: flex;
-  flex-direction: column;
-}
-
 .user-list {
+  .avatar {
+    width: 30px;
+    height: 30px;
+  }
 
-  .mat-list-item {
-    height: 40px;
-
-    .mat-list-avatar {
-      width: 30px;
-      height: 30px;
-    }
-
-    .xp {
-      line-height: 30px;
-    }
-
+  .xp {
+    line-height: 30px;
   }
 
   .list-content {
@@ -96,37 +61,12 @@
   }
 }
 
-.mat-list-base .mat-list-item .mat-list-item-content,
-.mat-list-base .mat-list-option .mat-list-item-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 16px;
-  position: relative;
-  width: 100%;
-
-}
-
 .main-content {
   height: 100%;
   width: 45%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-
-
-.mat-list-item {
-  height: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.chart {
-  height: 15px;
 }
 
 .all-content {
@@ -138,9 +78,7 @@
 .chart-block {
   width: 55%;
 
-  .chart-list {
-    .mat-list-item {
-      height: 40px;
-    }
+  .chart {
+    height: 15px;
   }
 }

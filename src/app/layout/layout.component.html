@@ -10,19 +10,15 @@
       </button>
       GMFCTN!
       <span class="toolbar-spacer"></span>
-      <a mat-button
-         class="navigation-item"
-         routerLink="app-dashboard"
-         routerLinkActive="router-link-active">Dashboard</a>
-      <a mat-button
-         class="navigation-item">Badges</a>
-      <a mat-button
-         class="navigation-item">Orders</a>
+      <a mat-button class="navigation-item" routerLink="dashboard" routerLinkActive="router-link-active">Dashboard</a>
+      <a mat-button class="navigation-item" routerLink="badges" routerLinkActive="router-link-active">Badges</a>
+      <a mat-button class="navigation-item">Orders</a>
       <span class="toolbar-spacer"></span>
 
       <div class="right-menu">
         <img [src]="user.userPic" alt="user avatar" class="user-pic" />
-        <button mat-button [matMenuTriggerFor]="menu">{{user.firstName}} {{user.lastName}}<mat-icon>arrow_drop_down</mat-icon>
+        <button mat-button [matMenuTriggerFor]="menu">{{user.firstName}} {{user.lastName}}<mat-icon>arrow_drop_down
+          </mat-icon>
         </button>
         <mat-menu #menu="matMenu">
           <button mat-menu-item>Edit profile</button>
@@ -35,7 +31,6 @@
     <div class="main-content">
       <router-outlet></router-outlet>
     </div>
-    
+
   </mat-sidenav-content>
 </mat-sidenav-container>
-
