@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '../shared/material/material.module';
 import { Routes, RouterModule } from '@angular/router';
-import { PipesModule } from '../shared/pipes/pipes.module'
-import { ThankYouModule } from '../shared/components/thank-you/thank-you.module'
+import { PipesModule } from '../shared/pipes/pipes.module';
+import { ThankYouModule } from '../shared/components/thank-you/thank-you.module';
 
 
 // Components

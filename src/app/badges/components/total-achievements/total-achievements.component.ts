@@ -13,7 +13,7 @@ export class TotalAchievementsComponent implements OnInit {
     { pic: './assets/achievement-icon.png', name: 'Exoft Corpo Power', xp: 20 }
   ];
 
-  totalXP: number = 0;
+  totalXP = 0;
 
   constructor() { }
 
@@ -21,10 +21,10 @@ export class TotalAchievementsComponent implements OnInit {
     this.totalXP = this.getXP(this.achievements);
   }
 
-  getXP(achievements) {
+  getXP(achievements: {pic: string, name: string, xp: number}[]): number {
     let counter = 0;
     achievements.forEach(achievement => {
-      counter = counter + achievement.xp
+      counter = counter + achievement.xp;
     });
 
     return counter;

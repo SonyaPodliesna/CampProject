@@ -6,8 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./layout.component.scss']
 })
 export class LayoutComponent implements OnInit {
-  user = { userPic: './assets/user-pic.jpg', firstName: 'Sonya', lastName: 'Podliesna' }
-  
+  user = { userPic: './assets/user-pic.jpg', firstName: 'Sonya', lastName: 'Podliesna' };
+
   constructor() { }
 
   ngOnInit(): void {

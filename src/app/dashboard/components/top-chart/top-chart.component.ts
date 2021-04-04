@@ -12,7 +12,7 @@ export class TopChartComponent implements OnInit {
     { userPic: './assets/user-pic.jpg', firstName: 'Tanya', lastName: 'Gogina', xp: 70, color: '#d99842', width: '' },
     { userPic: './assets/user-pic.jpg', firstName: 'Taras', lastName: 'Sava', xp: 15, color: '#78e9e7', width: '' },
     { userPic: './assets/user-pic.jpg', firstName: 'Maksym', lastName: 'Nykolaichuk', xp: 0, color: '#4aa2e0', width: '' }
-  ]
+  ];
 
   constructor() { }
 
@@ -20,7 +20,7 @@ export class TopChartComponent implements OnInit {
     const max = this.users[0].xp;
     this.users.forEach(user => {
       user.width = `${user.xp * 100 / max}%`;
-    })
+    });
   }
 
 }

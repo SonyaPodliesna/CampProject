@@ -43,7 +43,7 @@ export class ChallengesComponent implements OnInit {
     { avatar: '' },
     { avatar: '' },
     { avatar: '' }
-  ]
+  ];
 
   constructor() { }
 

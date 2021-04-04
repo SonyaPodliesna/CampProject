@@ -11,8 +11,8 @@ transform(value: Date): string {
 
   if (diffInMinutes >= 60 && diffInMinutes < 1440) {
     return `${Math.round(diffInMinutes / 60)} hours ago`;
-  } else if (diffInMinutes >= 1440 && diffInMinutes <= 2880) { 
-    return 'Yesterday'; 
+  } else if (diffInMinutes >= 1440 && diffInMinutes <= 2880) {
+    return 'Yesterday';
   } else if (diffInMinutes >= 2880) {
     return `${Math.round(diffInMinutes / 60 / 24)} days ago`;
   } else {

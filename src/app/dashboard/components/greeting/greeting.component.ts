@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GreetingComponent implements OnInit {
   user = { firstName: 'Sonya', lastName: 'Podliesna' };
-  currentTime: string = '';
+  currentTime = '';
 
   constructor() { }
 
-  getCurrentTime() {
+  getCurrentTime(): string {
     const d = new Date();
     const n = d.getHours();
 
@@ -26,8 +26,8 @@ export class GreetingComponent implements OnInit {
     }
   }
 
-  ngOnInit(): void { 
-    this.currentTime = this.getCurrentTime()
+  ngOnInit(): void {
+    this.currentTime = this.getCurrentTime();
   }
 
 }

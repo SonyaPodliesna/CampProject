@@ -1,13 +1,13 @@
-//Modules
+// Modules
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BadgesComponent } from './badges.component';
 import { MaterialModule } from '../shared/material/material.module';
 import { Routes, RouterModule } from '@angular/router';
-import { ThankYouModule } from '../shared/components/thank-you/thank-you.module'
-import { PipesModule } from '../shared/pipes/pipes.module'
+import { ThankYouModule } from '../shared/components/thank-you/thank-you.module';
+import { PipesModule } from '../shared/pipes/pipes.module';
 
-//Components
+// Components
 import { LastAchievementsComponent } from './components/last-achievements/last-achievements.component';
 import { TotalAchievementsComponent } from './components/total-achievements/total-achievements.component';
 import { UserComponent } from './components/user/user.component';
@@ -23,10 +23,10 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    BadgesComponent, 
-    LastAchievementsComponent, 
-    TotalAchievementsComponent, 
-    UserComponent, 
+    BadgesComponent,
+    LastAchievementsComponent,
+    TotalAchievementsComponent,
+    UserComponent,
     FullListAchievementsComponent
   ],
   imports: [
