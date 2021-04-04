@@ -11,7 +11,7 @@
         <div class="list-content">
 
           <div class="first-block">
-            <img matListAvatar class="avatar" [src]="exoftAchievement.userAvatar" alt="Picture of achievement" />
+            <img matListAvatar class="avatar" [src]="exoftAchievement.userAvatar" alt="User avatar" (click)="openOtherUserDialog(exoftAchievement)" />
             <span class="userFullName">{{ exoftAchievement.userFirstName }} {{ exoftAchievement.userLastName }}</span>
             <span class="date">{{ exoftAchievement.dateEvent | differenceInTime }}</span>
           </div>

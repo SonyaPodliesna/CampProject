@@ -109,3 +109,50 @@ body {
     }
   }
 }
+
+.other-user-profile {
+  .button-thanks-block {
+    width: 100%;
+    background-color: #69B518;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .button-thanks.mat-button,
+    .mat-icon-button,
+    .mat-stroked-button,
+    .mat-button {
+      background-color: #69B518;
+      border-radius: 0 0 10px 10px;
+    }
+  }
+}
+
+.other-profile-dialog {
+  .mat-dialog-container {
+    padding: 0;
+    overflow: hidden;
+  }
+}
+
+.request-achievement.mat-h3,
+.mat-subheading-2,
+.mat-typography h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.say-thanks.mat-h3,
+.mat-subheading-2,
+.mat-typography h3 {
+  margin: 20px;
+  text-align: left;
+}
+
+.say-thanks-dialog {
+  .mat-dialog-container {
+    padding: 0;
+    overflow: hidden;
+  }
+}

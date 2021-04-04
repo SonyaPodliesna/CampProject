@@ -5,6 +5,9 @@ import { MaterialModule } from '../shared/material/material.module';
 import { Routes, RouterModule } from '@angular/router';
 import { PipesModule } from '../shared/pipes/pipes.module';
 import { ThankYouModule } from '../shared/components/thank-you/thank-you.module';
+import { OtherUserProfileModule } from '../shared/modals/other-user-profile/other-user-profile.module';
+import { RequestAchievementModule } from '../shared/modals/request-achievement/request-achievement.module';
+import { SayThanksModule } from '../shared/modals/say-thanks/say-thanks.module';
 
 
 // Components
@@ -42,6 +45,9 @@ const routes: Routes = [
     MaterialModule,
     PipesModule,
     ThankYouModule,
+    OtherUserProfileModule,
+    RequestAchievementModule,
+    SayThanksModule
   ]
 })
 export class DashboardModule { }

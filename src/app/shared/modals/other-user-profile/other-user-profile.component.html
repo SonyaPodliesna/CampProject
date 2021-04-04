@@ -1,0 +1,29 @@
+<div class="other-user-profile">
+
+  <button mat-button mat-dialog-close class="close-button">
+    <mat-icon class="icon-close">close</mat-icon>
+  </button>
+
+  <div mat-dialog-content class="other-user-profile-content">
+
+    <div class="user-info">
+      <img class="user-pic" [src]="data.userPic" alt="User avatar" />
+      <span class="user-fullname">{{data.userFirstName}} {{data.userLastName}}</span>
+      <span class="user-XP">EXP: {{data.userXP}} XP</span>
+    </div>
+
+    <div class="user-achievements">
+      <div *ngFor="let userAchievement of userAchievements">
+        <div class="ahievement-info">
+          <img class="achievement-pic" [src]="userAchievement.pic" alt="Picture of achievements" />
+          <span class="achievement-name">{{userAchievement.name}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="button-thanks-block">
+    <button mat-button class="button-thanks" (click)="openSayThanksDialog()">SAY THANKS</button>
+  </div>
+
+</div>

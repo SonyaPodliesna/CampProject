@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { RequestAchievementComponent } from '../../../shared/modals/request-achievement/request-achievement.component';
 
 @Component({
   selector: 'app-personal-achievements',
@@ -13,9 +15,16 @@ export class PersonalAchievementsComponent implements OnInit {
     { pic: './assets/achievement-icon.png', name: 'Exoft Corporate Power', xp: '20 xp' }
   ];
 
-  constructor() { }
+  constructor(private readonly matDialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  openRequestDialog(): void {
+    this.matDialog.open(RequestAchievementComponent, {
+      width: '600px',
+      panelClass: 'request-achievement-dialog'
+    });
   }
 
 }

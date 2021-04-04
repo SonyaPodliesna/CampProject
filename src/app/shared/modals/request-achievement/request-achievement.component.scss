@@ -1,0 +1,43 @@
+.request-achievement {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+  .close-button {
+    position: absolute;
+    top: -25px;
+    right: -20px;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0px;
+    color: #69B518;
+  }
+
+  .button-send {
+    width: max-content;
+    background-color: #69B518;
+    color: #ffffff;
+  }
+}
+
+.request-achievement-content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  .request-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    .button-block {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+    }
+  }
+}

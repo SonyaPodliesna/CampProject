@@ -15,7 +15,7 @@
           <mat-list-item *ngFor="let user of users">
             <div class="list-content">
               <div class="list-wrapper">
-                <img matListAvatar class="avatar" [src]="user.userPic" alt="User avatar" />
+                <img matListAvatar class="avatar" [src]="user.userPic" alt="User avatar" (click)="openOtherUserDialog(user)"/>
 
                 <div class="user-name">
                   <span>{{ user.firstName }}</span>
