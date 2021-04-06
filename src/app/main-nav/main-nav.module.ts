@@ -6,28 +6,22 @@ import { MainNavComponent } from './main-nav.component';
 
 
 const routes: Routes = [
-    {
-        path: '',
-        component: MainNavComponent,
-        children: [
-            {
-                path: 'dashboard',
-                loadChildren: () => import('../dashboard/dashboard.module').then(module => module.DashboardModule)
-
-            }
-        ]
-    }
+  {
+    path: '',
+    component: MainNavComponent,
+  }
 ];
 
 
 @NgModule({
-    declarations: [
-        MainNavComponent,
-    ],
-    imports: [
-        CommonModule,
-        RouterModule.forChild(routes),
-        MaterialModule
-    ]
+  declarations: [
+    MainNavComponent,
+  ],
+  imports: [
+    CommonModule,
+    RouterModule.forChild(routes),
+    MaterialModule
+  ],
+  exports: [MainNavComponent]
 })
 export class MainNavModule { }

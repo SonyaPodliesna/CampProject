@@ -6,29 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./greeting.component.scss']
 })
 export class GreetingComponent implements OnInit {
+  user = { firstName: 'Sonya', lastName: 'Podliesna' };
+  currentTime = '';
 
-  currentTime() {
-    let d = new Date();
-    let n = d.getHours();
+  getCurrentTime(): string {
+    const d = new Date();
+    const n = d.getHours();
 
-    if (n >= 5 && n <= 12) {
+    if (n >= 5 && n < 12) {
       return 'Good morning';
-    } else if (n >= 12 && n <= 18) {
+    } else if (n >= 12 && n < 18) {
       return 'Good day';
     } else if (n >= 18 && n <= 24) {
       return 'Good evening';
     } else {
       return 'Good night';
     }
-  };
-
-  user = { firstName: 'Sonya', lastName: 'Podliesna' };
-
-
-  constructor() { }
-
-  ngOnInit(): void {
-
   }
 
+  ngOnInit(): void {
+    this.currentTime = this.getCurrentTime();
+  }
 }

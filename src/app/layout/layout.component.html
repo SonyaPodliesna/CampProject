@@ -1,0 +1,46 @@
+<mat-sidenav-container fullscreen>
+  <mat-sidenav mode="over" #sidenav>
+    <app-main-nav (closeSidebar)="sidenav.toggle()"></app-main-nav>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      GMFCTN!
+
+      <span class="toolbar-spacer"></span>
+
+      <a mat-button class="navigation-item" routerLink="app-dashboard"
+        routerLinkActive="router-link-active">Dashboard</a>
+
+      <a mat-button class="navigation-item">Badges</a>
+
+      <a mat-button class="navigation-item">Orders</a>
+
+      <span class="toolbar-spacer"></span>
+
+      <div class="right-menu">
+        <img [src]="user.userPic" alt="user avatar" class="user-pic" />
+
+        <button mat-button [matMenuTriggerFor]="menu">
+          {{user.firstName}} {{user.lastName}}<mat-icon>arrow_drop_down</mat-icon>
+        </button>
+
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Edit profile</button>
+
+          <button mat-menu-item>Change password</button>
+
+          <button mat-menu-item>Log out</button>
+        </mat-menu>
+      </div>
+    </mat-toolbar>
+
+    <div class="main-content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

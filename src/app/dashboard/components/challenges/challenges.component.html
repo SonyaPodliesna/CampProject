@@ -1,15 +1,21 @@
 <div class="challenges">
   <div class="tittle">
     <p>CHALLENGES</p>
-    <a mat-flat-button
-       class="show-more">Show more</a>
+
+    <a mat-flat-button class="show-more">Show more</a>
   </div>
-  <div class="content">
-    <div class="event-image"
-         *ngFor="let event of events">
-      <img src="./assets/on-bike.jpg"
-           alt=""
-           class="event-avatar">
+
+  <div class="general-content">
+    <div class="main-content">
+      <div class="dot"></div>
+
+      <p class="content-text">Ended</p>
+    </div>
+
+    <div class="content">
+      <div class="event-image" *ngFor="let event of events">
+        <img src="./assets/on-bike.jpg" alt="Star picture" class="event-avatar" />
+      </div>
     </div>
   </div>
 </div>
