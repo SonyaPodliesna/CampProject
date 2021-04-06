@@ -1,7 +1,7 @@
 <div class="exoftachiv">
-
   <div class="tittle">
     <span class="name">EXOFT ACHIEVEMENTS</span>
+
     <div class="achievement-button">{{exoftAchievements.length}}</div>
   </div>
 
@@ -9,25 +9,25 @@
     <mat-list class="list">
       <mat-list-item *ngFor="let exoftAchievement of exoftAchievements">
         <div class="list-content">
-
           <div class="first-block">
             <img matListAvatar class="avatar" [src]="exoftAchievement.userAvatar" alt="Picture of achievement" />
+
             <span class="userFullName">{{ exoftAchievement.userFirstName }} {{ exoftAchievement.userLastName }}</span>
+
             <span class="date">{{ exoftAchievement.dateEvent | differenceInTime }}</span>
           </div>
 
-        <div class="line-content"> 
-          <div class="second-block">
-            <span class="event-text">{{ exoftAchievement.eventText }}</span>
-          </div>
+          <div class="line-content">
+            <div class="second-block">
+              <span class="event-text">{{ exoftAchievement.eventText }}</span>
+            </div>
 
-          <div class="third-block">
-            <div class="event-type-block">
-              <span class="event-type">{{ exoftAchievement.eventType }}</span>
+            <div class="third-block">
+              <div class="event-type-block">
+                <span class="event-type">{{ exoftAchievement.eventType }}</span>
+              </div>
             </div>
           </div>
-        </div> 
-
         </div>
       </mat-list-item>
     </mat-list>

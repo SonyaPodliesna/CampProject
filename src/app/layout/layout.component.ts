@@ -5,12 +5,6 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.scss']
 })
-export class LayoutComponent implements OnInit {
-  user = { userPic: './assets/user-pic.jpg', firstName: 'Sonya', lastName: 'Podliesna' }
-  
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class LayoutComponent {
+  user = { userPic: './assets/user-pic.jpg', firstName: 'Sonya', lastName: 'Podliesna' };
 }

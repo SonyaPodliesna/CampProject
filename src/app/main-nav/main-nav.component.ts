@@ -17,27 +17,22 @@ export class MainNavComponent implements OnInit {
     { pic: './assets/achievement-icon.png', name: 'Exoft Corpo Power', xp: 20 }
   ];
 
-  totalXP: number = 0;
-
-  constructor() {
-  }
+  totalXP = 0;
 
   ngOnInit(): void {
     this.totalXP = this.getXP(this.achievements);
   }
 
-  getXP(achievements) {
+  getXP(achievements): number {
     let counter = 0;
     achievements.forEach(achievement => {
-      counter = counter + achievement.xp
+      counter = counter + achievement.xp;
     });
 
     return counter;
   }
 
-  hideSidebar() {
+  hideSidebar(): void {
     this.closeSidebar.emit();
   }
-
-
 }

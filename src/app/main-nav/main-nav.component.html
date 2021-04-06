@@ -1,5 +1,7 @@
 <div class="tittle">
+
 GMFCTN!
+
   <button mat-icon-button class="menu-icon" (click)="hideSidebar()">
    <mat-icon>menu</mat-icon>
   </button>
@@ -8,23 +10,29 @@ GMFCTN!
 <div class="main-content">
   <div class="user-info">
     <img class="user-pic" [src]='userInfo.userPic' alt="User avatar" />
+    
     <span class="user-fullname"><b>{{userInfo.userFirstName}} {{userInfo.userLastName}}</b></span>
   </div>
 
   <div class="sidenav_buttons">
     <button mat-button class="sidenav_button">Edit profile</button>
+
     <button mat-button class="sidenav_button">Change password</button>
+
     <button mat-button class="sidenav_button">Log out</button>
   </div>
 
   <div class="main-text">
     <p><span class="green-text">Total:</span>&nbsp;<span class="white-text">{{achievements.length}} Badges</span></p>
+
     <p><span class="green-text">EXP:</span>&nbsp;<span class="white-text">{{totalXP}} XP</span></p>
   </div>
 
   <div class="routers">
     <a mat-button class="navigation-item" routerLink="app-dashboard" routerLinkActive="router-link-active">Dashboard</a>
+
     <a mat-button class="navigation-item" >Badges</a>
+
     <a mat-button class="navigation-item" >Orders</a>
   </div>
 </div>
