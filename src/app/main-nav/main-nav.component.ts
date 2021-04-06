@@ -8,7 +8,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class MainNavComponent implements OnInit {
   @Output() closeSidebar = new EventEmitter<void>();
 
-  userInfo = {userFirstName: 'Sonya', userLastName: 'Podliesna', userPic: './assets/user-pic.jpg'};
+  userInfo = { userFirstName: 'Sonya', userLastName: 'Podliesna', userPic: './assets/user-pic.jpg' };
 
   achievements = [
     { pic: './assets/achievement-icon.png', name: 'Exoft Turbo Power', xp: 15 },
@@ -19,14 +19,11 @@ export class MainNavComponent implements OnInit {
 
   totalXP = 0;
 
-  constructor() {
-  }
-
   ngOnInit(): void {
     this.totalXP = this.getXP(this.achievements);
   }
 
-  getXP(achievements: {pic: string, name: string, xp: number}[]): number {
+  getXP(achievements: { pic: string, name: string, xp: number }[]): number {
     let counter = 0;
     achievements.forEach(achievement => {
       counter = counter + achievement.xp;
@@ -38,6 +35,4 @@ export class MainNavComponent implements OnInit {
   hideSidebar(): void {
     this.closeSidebar.emit();
   }
-
-
 }

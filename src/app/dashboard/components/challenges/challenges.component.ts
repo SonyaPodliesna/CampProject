@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-challenges',
   templateUrl: './challenges.component.html',
   styleUrls: ['./challenges.component.scss']
 })
-export class ChallengesComponent implements OnInit {
+export class ChallengesComponent {
   events = [
     { avatar: '' },
     { avatar: '' },
@@ -44,10 +44,4 @@ export class ChallengesComponent implements OnInit {
     { avatar: '' },
     { avatar: '' }
   ];
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

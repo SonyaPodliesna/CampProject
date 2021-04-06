@@ -37,5 +37,4 @@ export class TopChartComponent implements OnInit {
       }
     });
   }
-
 }

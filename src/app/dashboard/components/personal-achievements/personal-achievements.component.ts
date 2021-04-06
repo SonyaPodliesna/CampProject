@@ -7,7 +7,7 @@ import { RequestAchievementComponent } from '../../../shared/modals/request-achi
   templateUrl: './personal-achievements.component.html',
   styleUrls: ['./personal-achievements.component.scss']
 })
-export class PersonalAchievementsComponent implements OnInit {
+export class PersonalAchievementsComponent {
   personalAchievements = [
     { pic: './assets/achievement-icon.png', name: 'Exoft Turbo Power', xp: '15 xp' },
     { pic: './assets/achievement-icon.png', name: 'Exoft Turbo Power', xp: '15 xp' },
@@ -17,14 +17,10 @@ export class PersonalAchievementsComponent implements OnInit {
 
   constructor(private readonly matDialog: MatDialog) { }
 
-  ngOnInit(): void {
-  }
-
   openRequestDialog(): void {
     this.matDialog.open(RequestAchievementComponent, {
       width: '600px',
       panelClass: 'request-achievement-dialog'
     });
   }
-
 }

@@ -7,7 +7,7 @@ import { OtherUserProfileComponent } from '../../../shared/modals/other-user-pro
   templateUrl: './exoft-achievements.component.html',
   styleUrls: ['./exoft-achievements.component.scss']
 })
-export class ExoftAchievementsComponent implements OnInit {
+export class ExoftAchievementsComponent {
   exoftAchievements = [
     { userFirstName: 'Tanya', userLastName: 'Gogina', userAvatar: './assets/user-pic.jpg', dateEvent: new Date(2021, 2, 31, 12, 0, 0), eventText: 'Got achievement Exoft Turbo Power', eventType: 'Records', xp: 15 },
     { userFirstName: 'Tanya', userLastName: 'Gogina', userAvatar: './assets/user-pic.jpg', dateEvent: new Date(2021, 2, 29, 12, 0, 0), eventText: 'Got achievement Exoft Turbo Power', eventType: 'Records', xp: 15 },
@@ -25,8 +25,7 @@ export class ExoftAchievementsComponent implements OnInit {
   ];
   constructor(private readonly matDialog: MatDialog) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   openOtherUserDialog(exoftAchievement: { userAvatar: string, userFirstName: string, userLastName: string, xp: number }): void {
     this.matDialog.open(OtherUserProfileComponent, {
@@ -40,4 +39,4 @@ export class ExoftAchievementsComponent implements OnInit {
       }
     });
   }
-  }
+}

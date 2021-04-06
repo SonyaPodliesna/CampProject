@@ -9,8 +9,6 @@ export class GreetingComponent implements OnInit {
   user = { firstName: 'Sonya', lastName: 'Podliesna' };
   currentTime = '';
 
-  constructor() { }
-
   getCurrentTime(): string {
     const d = new Date();
     const n = d.getHours();
@@ -29,5 +27,4 @@ export class GreetingComponent implements OnInit {
   ngOnInit(): void {
     this.currentTime = this.getCurrentTime();
   }
-
 }
