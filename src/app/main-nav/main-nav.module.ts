@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { MaterialModule } from '../shared/material/material.module';
 import { MainNavComponent } from './main-nav.component';
 
-
 const routes: Routes = [
   {
     path: '',

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { OtherUserProfileComponent } from '../../../shared/modals/other-user-profile/other-user-profile.component';
 
@@ -24,8 +24,6 @@ export class ExoftAchievementsComponent {
     { userFirstName: 'Tanya', userLastName: 'Gogina', userAvatar: './assets/user-pic.jpg', dateEvent: new Date(2021, 3, 29, 12, 0, 0), eventText: 'Got achievement Exoft Turbo Power', eventType: 'Records', xp: 15 },
   ];
   constructor(private readonly matDialog: MatDialog) { }
-
-  ngOnInit(): void { }
 
   openOtherUserDialog(exoftAchievement: { userAvatar: string, userFirstName: string, userLastName: string, xp: number }): void {
     this.matDialog.open(OtherUserProfileComponent, {

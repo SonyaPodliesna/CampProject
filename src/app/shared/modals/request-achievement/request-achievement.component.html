@@ -1,15 +1,15 @@
 <div class="request-achievement">
-
   <button mat-button mat-dialog-close class="close-button">
     <mat-icon class="icon-close">close</mat-icon>
   </button>
 
   <h3 mat-dialog-title>Please, leave a message and your achievement will be assigned soon</h3>
+
   <div mat-dialog-content class="request-achievement-content">
     <form class="request-form" [formGroup]="inputForm">
-
       <mat-form-field appearance="standard">
         <mat-label>Achievement</mat-label>
+
         <mat-select formControlName="achievement">
           <mat-option *ngFor="let achievement of achievements" value="achievement.name">{{achievement.name}}
           </mat-option>
@@ -18,6 +18,7 @@
 
       <mat-form-field appearance="standard">
         <mat-label>Your message</mat-label>
+
         <textarea matInput formControlName="message" required></textarea>
       </mat-form-field>
 

@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { SayThanksComponent } from '../say-thanks/say-thanks.component';
 
@@ -7,7 +7,7 @@ import { SayThanksComponent } from '../say-thanks/say-thanks.component';
   templateUrl: './other-user-profile.component.html',
   styleUrls: ['./other-user-profile.component.scss']
 })
-export class OtherUserProfileComponent implements OnInit {
+export class OtherUserProfileComponent {
   userAchievements = [
     { pic: './assets/achievement-icon.png', name: 'Exoft turbo power', xp: 15 },
     { pic: './assets/achievement-icon.png', name: 'Exoft owl power', xp: 15 },
@@ -21,14 +21,10 @@ export class OtherUserProfileComponent implements OnInit {
     { userPic: string, userFirstName: string, userLastName: string, userXP: number },
     public readonly matDialog: MatDialog) { }
 
-  ngOnInit(): void {
-  }
-
   openSayThanksDialog(): void {
     this.matDialog.open(SayThanksComponent, {
       width: '300px',
       panelClass: 'say-thanks-dialog',
     });
   }
-
 }

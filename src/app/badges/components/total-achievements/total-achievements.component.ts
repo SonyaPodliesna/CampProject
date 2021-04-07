@@ -15,13 +15,11 @@ export class TotalAchievementsComponent implements OnInit {
 
   totalXP = 0;
 
-  constructor() { }
-
   ngOnInit(): void {
     this.totalXP = this.getXP(this.achievements);
   }
 
-  getXP(achievements: {pic: string, name: string, xp: number}[]): number {
+  getXP(achievements: { pic: string, name: string, xp: number }[]): number {
     let counter = 0;
     achievements.forEach(achievement => {
       counter = counter + achievement.xp;

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { OtherUserProfileComponent } from '../../modals/other-user-profile/other-user-profile.component';
 
@@ -7,13 +7,10 @@ import { OtherUserProfileComponent } from '../../modals/other-user-profile/other
   templateUrl: './thank-you.component.html',
   styleUrls: ['./thank-you.component.scss']
 })
-export class ThankYouComponent implements OnInit {
-  public user = { userPic: './assets/user-pic.jpg', firstName: 'Taras', lastName: 'Sava', userXP: 15 };
+export class ThankYouComponent {
+  user = { userPic: './assets/user-pic.jpg', firstName: 'Taras', lastName: 'Sava', userXP: 15 };
 
   constructor(private readonly matDialog: MatDialog) { }
-
-  ngOnInit(): void {
-  }
 
   openOtherUserDialog(): void {
     this.matDialog.open(OtherUserProfileComponent, {
@@ -27,5 +24,4 @@ export class ThankYouComponent implements OnInit {
       }
     });
   }
-
 }

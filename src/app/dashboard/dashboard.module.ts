@@ -9,7 +9,6 @@ import { OtherUserProfileModule } from '../shared/modals/other-user-profile/othe
 import { RequestAchievementModule } from '../shared/modals/request-achievement/request-achievement.module';
 import { SayThanksModule } from '../shared/modals/say-thanks/say-thanks.module';
 
-
 // Components
 import { DashboardComponent } from './dashboard.component';
 import { BadgesComponent } from './components/badges/badges.component';
@@ -18,8 +17,6 @@ import { ExoftAchievementsComponent } from './components/exoft-achievements/exof
 import { GreetingComponent } from './components/greeting/greeting.component';
 import { PersonalAchievementsComponent } from './components/personal-achievements/personal-achievements.component';
 import { TopChartComponent } from './components/top-chart/top-chart.component';
-
-
 
 const routes: Routes = [
   {
