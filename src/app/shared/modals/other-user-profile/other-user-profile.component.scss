@@ -1,0 +1,68 @@
+.other-user-profile-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px 0;
+
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 5px;
+
+    .user-pic {
+      width: 150px;
+      height: 150px;
+      border: 2px solid #69B518;
+      border-radius: 50%;
+      margin: 10px;
+    }
+
+    .user-fullname {
+      font-size: 20px;
+      line-height: 22px;
+    }
+  }
+
+  .user-achievements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .ahievement-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 5px;
+
+      .achievement-pic {
+        width: 80px;
+        height: 80px;
+      }
+
+      .achievement-name {
+        min-width: 100PX;
+        max-width: 100px;
+        word-wrap: break-word;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.other-user-profile {
+    position: relative;
+    
+  .close-button {
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0px;
+  }
+}

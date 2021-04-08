@@ -16,7 +16,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [],
@@ -26,6 +28,7 @@ import { MatDividerModule } from '@angular/material/divider';
   exports: [
     MatButtonModule,
     MatFormFieldModule,
+    MatInputModule,
     MatSlideToggleModule,
     MatMenuModule,
     MatSidenavModule,
@@ -38,8 +41,10 @@ import { MatDividerModule } from '@angular/material/divider';
     MatIconModule,
     MatTooltipModule,
     MatCardModule,
-    MatDividerModule
-  ]
+    MatDividerModule,
+    MatDialogModule,
+    MatSelectModule
+  ],
 })
 export class MaterialModule {
 }

@@ -4,7 +4,10 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from '../shared/material/material.module';
 import { Routes, RouterModule } from '@angular/router';
 import { PipesModule } from '../shared/pipes/pipes.module';
-
+import { ThankYouModule } from '../shared/components/thank-you/thank-you.module';
+import { OtherUserProfileModule } from '../shared/modals/other-user-profile/other-user-profile.module';
+import { RequestAchievementModule } from '../shared/modals/request-achievement/request-achievement.module';
+import { SayThanksModule } from '../shared/modals/say-thanks/say-thanks.module';
 
 // Components
 import { DashboardComponent } from './dashboard.component';
@@ -13,10 +16,7 @@ import { ChallengesComponent } from './components/challenges/challenges.componen
 import { ExoftAchievementsComponent } from './components/exoft-achievements/exoft-achievements.component';
 import { GreetingComponent } from './components/greeting/greeting.component';
 import { PersonalAchievementsComponent } from './components/personal-achievements/personal-achievements.component';
-import { ThankYouComponent } from './components/thank-you/thank-you.component';
 import { TopChartComponent } from './components/top-chart/top-chart.component';
-
-
 
 const routes: Routes = [
   {
@@ -34,14 +34,17 @@ const routes: Routes = [
     ExoftAchievementsComponent,
     GreetingComponent,
     PersonalAchievementsComponent,
-    ThankYouComponent,
     TopChartComponent,
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
     MaterialModule,
-    PipesModule
+    PipesModule,
+    ThankYouModule,
+    OtherUserProfileModule,
+    RequestAchievementModule,
+    SayThanksModule
   ]
 })
 export class DashboardModule { }

@@ -1,0 +1,68 @@
+.badges {
+  width: 100%;
+  height: 100%;
+  background-color: #4B4B49;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.tittle {
+  text-align: left;
+  font-size: 12px;
+  margin: 10px;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .number-of-achievement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    .number {
+      font-size: 46px;
+      line-height: 46px;
+      color: #69B518;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .badges-text {
+      color: #ffffff;
+    }
+  }
+
+  .total-xp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .number-xp {
+      font-size: 96px;
+      line-height: 96px;
+      color: #69B518;
+      margin-top: -30px;
+    }
+
+    .exp {
+      font-size: 22px;
+    }
+  }
+
+  .text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+}

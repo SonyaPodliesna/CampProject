@@ -1,4 +1,6 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { OtherUserProfileComponent } from '../../../shared/modals/other-user-profile/other-user-profile.component';
 
 @Component({
   selector: 'app-top-chart',
@@ -14,10 +16,25 @@ export class TopChartComponent implements OnInit {
     { userPic: './assets/user-pic.jpg', firstName: 'Maksym', lastName: 'Nykolaichuk', xp: 0, color: '#4aa2e0', width: '' }
   ];
 
+  constructor(private readonly matDialog: MatDialog) { }
+
   ngOnInit(): void {
     const max = this.users[0].xp;
     this.users.forEach(user => {
       user.width = `${user.xp * 100 / max}%`;
+    });
+  }
+
+  openOtherUserDialog(user: { userPic: string, firstName: string, lastName: string, xp: number }): void {
+    this.matDialog.open(OtherUserProfileComponent, {
+      width: '800px',
+      panelClass: 'other-profile-dialog',
+      data: {
+        userPic: user.userPic,
+        userFirstName: user.firstName,
+        userLastName: user.lastName,
+        userXP: user.xp,
+      }
     });
   }
 }

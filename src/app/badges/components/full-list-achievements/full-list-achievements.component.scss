@@ -1,0 +1,106 @@
+.full-list-achievements {
+  width: 100%;
+  height: 100%;
+  background-color: #4B4B49;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin: 10px;
+}
+
+.main-content {
+  .content-titles {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 30px;
+
+    .achievement-title {
+      width: 50%;
+      text-align: left;
+    }
+
+    .exp-title {
+      width: 25%;
+      text-align: center;
+    }
+
+    .date-title {
+      width: 25%;
+      text-align: right;
+
+      .date-margin {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  .content {
+    overflow-y: auto;
+    height: calc(100% - 82px);
+    padding-left: 10px;
+    margin-right: 10px;
+
+    .list-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      font-size: 12px;
+      line-height: 20px;
+
+      .achievement-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 50%;
+
+
+        .achievement-pic {
+          width: 40px;
+          height: 40px;
+          margin-right: 20px;
+        }
+
+        .achievement-name {
+          display: flex;
+          flex-direction: row;
+          justify-items: flex-start;
+          width: 130px;
+        }
+      }
+
+      .xp {
+        width: 25%;
+        text-align: center;
+      }
+
+      .date {
+        width: 25%;
+        text-align: right;
+      }
+    }
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #54575f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #69B518;
+}

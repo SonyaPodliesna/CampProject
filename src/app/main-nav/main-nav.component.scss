@@ -17,7 +17,7 @@
   align-items: center;
 
   .user-pic{
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
     border-radius: 50%;
     width: 130px;
     height: 130px;
@@ -75,5 +75,11 @@
   .navigation-item {
     font-size: 18px;
   }
+}
+
+.router-link-active {
+  border-bottom: #69B518 solid 2px;
+  border-radius: 0;
+  color: #69B518;
 }
 
