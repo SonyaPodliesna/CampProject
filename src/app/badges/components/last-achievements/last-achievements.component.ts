@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { RequestAchievementComponent } from '../../../shared/modals/request-achievement/request-achievement.component';
 
 @Component({
   selector: 'app-last-achievements',
@@ -12,4 +14,14 @@ export class LastAchievementsComponent {
     { pic: './assets/achievement-icon.png', name: 'Exoft Skylark Power', xp: 20 },
     { pic: './assets/achievement-icon.png', name: 'Exoft Corpo Power', xp: 20 }
   ];
+
+  constructor(private readonly matDialog: MatDialog) { }
+
+  openRequestDialog(): void {
+    this.matDialog.open(RequestAchievementComponent, {
+      width: '600px',
+      panelClass: 'request-achievement-dialog',
+      backdropClass: 'backdropBackground'
+    });
+  }
 }

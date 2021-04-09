@@ -29,6 +29,7 @@ export class TopChartComponent implements OnInit {
     this.matDialog.open(OtherUserProfileComponent, {
       width: '800px',
       panelClass: 'other-profile-dialog',
+      backdropClass: 'backdropBackground',
       data: {
         userPic: user.userPic,
         userFirstName: user.firstName,

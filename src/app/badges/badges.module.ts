@@ -6,6 +6,8 @@ import { MaterialModule } from '../shared/material/material.module';
 import { Routes, RouterModule } from '@angular/router';
 import { ThankYouModule } from '../shared/components/thank-you/thank-you.module';
 import { PipesModule } from '../shared/pipes/pipes.module';
+import { RequestAchievementModule } from '../shared/modals/request-achievement/request-achievement.module';
+import { ProfileSettingsModule } from '../shared/modals/profile-settings/profile-settings.module';
 
 // Components
 import { LastAchievementsComponent } from './components/last-achievements/last-achievements.component';
@@ -34,7 +36,9 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     MaterialModule,
     ThankYouModule,
-    PipesModule
+    PipesModule,
+    RequestAchievementModule,
+    ProfileSettingsModule
   ]
 })
 export class BadgesModule { }

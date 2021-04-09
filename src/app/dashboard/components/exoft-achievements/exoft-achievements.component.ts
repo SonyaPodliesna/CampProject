@@ -29,6 +29,7 @@ export class ExoftAchievementsComponent {
     this.matDialog.open(OtherUserProfileComponent, {
       width: '800px',
       panelClass: 'other-profile-dialog',
+      backdropClass: 'backdropBackground',
       data: {
         userPic: exoftAchievement.userAvatar,
         userFirstName: exoftAchievement.userFirstName,
