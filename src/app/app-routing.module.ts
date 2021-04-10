@@ -7,6 +7,10 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./layout/layout.module').then(module => module.LayoutModule)
   },
+  {
+    path: 'sign-in',
+    loadChildren: () => import('./sign-in/sign-in.module').then(module => module.SignInModule)
+  },
   { path: '**', redirectTo: 'dashboard', pathMatch: 'full' }
 ];
 

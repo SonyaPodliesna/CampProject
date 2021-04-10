@@ -19,7 +19,7 @@ export class OtherUserProfileComponent {
 
   constructor(@Inject(MAT_DIALOG_DATA) public data:
     { userPic: string, userFirstName: string, userLastName: string, userXP: number },
-    public readonly matDialog: MatDialog) { }
+              public readonly matDialog: MatDialog) { }
 
   openSayThanksDialog(): void {
     this.matDialog.open(SayThanksComponent, {

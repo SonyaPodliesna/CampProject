@@ -32,7 +32,7 @@ export class ChangePasswordComponent implements OnInit {
     return null;
   }
 
-  private checkPasswords(group: FormGroup) {
+  private checkPasswords(group: FormGroup): ValidationErrors | null {
     if (!group) {
 
       return;
