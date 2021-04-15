@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, AbstractControl, Validators, ValidationErrors } from '@angular/forms';
+import {
+  FormBuilder,
+  FormGroup,
+  Validators,
+  ValidationErrors
+} from '@angular/forms';
+import { passwordValidator } from '../../validators/password-validator.directive';
 
 @Component({
   selector: 'app-change-password',
@@ -8,28 +14,17 @@ import { FormBuilder, FormGroup, AbstractControl, Validators, ValidationErrors }
 })
 export class ChangePasswordComponent implements OnInit {
   changeForm: FormGroup;
-  private readonly pswrd: RegExp = /^(?=\D*\d)(?=[^a-z]*[a-z])(?=[^A-Z]*[A-Z]).{8,30}$/;
 
   constructor(private readonly fb: FormBuilder) { }
 
   ngOnInit(): void {
     this.changeForm = this.fb.group({
       oldPassword: this.fb.control('', Validators.required),
-      newPassword: this.fb.control('', [Validators.required, this.psswrdValidator.bind(this)]),
-      confirmPassword: this.fb.control('', [Validators.required, this.psswrdValidator.bind(this)])
+      newPassword: this.fb.control('', [Validators.required, passwordValidator]),
+      confirmPassword: this.fb.control('', [Validators.required, passwordValidator])
     },
       { validators: this.checkPasswords }
     );
-  }
-
-  private psswrdValidator(control: AbstractControl): ValidationErrors | null {
-    if (control?.value) {
-      const isValid = this.pswrd.test(control.value);
-      return !isValid ? { invalidPassword: true } : null;
-
-    }
-
-    return null;
   }
 
   private checkPasswords(group: FormGroup): ValidationErrors | null {

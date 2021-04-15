@@ -1,6 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { SayThanksComponent } from '../say-thanks/say-thanks.component';
+import { User } from '../../models/user.model';
 
 @Component({
   selector: 'app-other-user-profile',
@@ -17,9 +18,9 @@ export class OtherUserProfileComponent {
     { pic: './assets/achievement-icon.png', name: 'Exoft corporate power', xp: 25 },
   ];
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data:
-    { userPic: string, userFirstName: string, userLastName: string, userXP: number },
-              public readonly matDialog: MatDialog) { }
+  constructor(
+    @Inject(MAT_DIALOG_DATA) public data: User,
+    private readonly matDialog: MatDialog) { }
 
   openSayThanksDialog(): void {
     this.matDialog.open(SayThanksComponent, {
