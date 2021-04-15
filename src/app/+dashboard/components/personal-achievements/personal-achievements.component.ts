@@ -20,7 +20,8 @@ export class PersonalAchievementsComponent {
   openRequestDialog(): void {
     this.matDialog.open(RequestAchievementComponent, {
       width: '600px',
-      panelClass: 'request-achievement-dialog'
+      panelClass: 'request-achievement-dialog',
+      backdropClass: 'backdropBackground'
     });
   }
 }

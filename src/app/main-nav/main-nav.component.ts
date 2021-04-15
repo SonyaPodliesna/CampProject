@@ -1,4 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ProfileSettingsComponent } from '../shared/modals/profile-settings/profile-settings.component';
+import { ChangePasswordComponent } from '../shared/modals/change-password/change-password.component';
 
 @Component({
   selector: 'app-main-nav',
@@ -19,6 +22,8 @@ export class MainNavComponent implements OnInit {
 
   totalXP = 0;
 
+  constructor(private readonly matDialog: MatDialog) { }
+
   ngOnInit(): void {
     this.totalXP = this.getXP(this.achievements);
   }
@@ -34,5 +39,21 @@ export class MainNavComponent implements OnInit {
 
   hideSidebar(): void {
     this.closeSidebar.emit();
+  }
+
+  openProfileSettingsDialog(): void {
+    this.matDialog.open(ProfileSettingsComponent, {
+      width: '400px',
+      panelClass: 'profile-settings-dialog',
+      backdropClass: 'backdropBackground'
+    });
+  }
+
+  openChangePasswordDialog(): void {
+    this.matDialog.open(ChangePasswordComponent, {
+      width: '400px',
+      panelClass: 'change-password-dialog',
+      backdropClass: 'backdropBackground'
+    });
   }
 }

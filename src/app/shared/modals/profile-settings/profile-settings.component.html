@@ -1,0 +1,45 @@
+<div class="profile-settings">
+
+
+  <div mat-dialog-content class="profile-settings-content">
+    <div class="header">
+      <mat-icon mat-dialog-close class="arrow-back">arrow_back</mat-icon>
+
+      <h3 mat-dialog-title>Profile settings</h3>
+
+      <img [src]="user.avatar" alt="User avatar" class="user-avatar" />
+    </div>
+
+    <form class="user-profile-settings" [formGroup]="editingForm">
+      <div class="name-field">
+        <mat-form-field appearance="standard">
+          <mat-label>FIRST NAME</mat-label>
+
+          <input matInput formControlName="firstName">
+        </mat-form-field>
+
+        <mat-form-field appearance="standard">
+          <mat-label>LAST NAME</mat-label>
+
+          <input matInput formControlName="lastName">
+        </mat-form-field>
+      </div>
+
+      <mat-form-field appearance="standard">
+        <mat-label>EMAIL ADDRESS</mat-label>
+
+        <input matInput email formControlName="emailAddress">
+      </mat-form-field>
+
+      <mat-form-field appearance="standard">
+        <mat-label>STATUS</mat-label>
+
+        <input matInput formControlName="status">
+      </mat-form-field>
+
+      <div class="button-block">
+        <button mat-button class="button-save">SAVE CHANGES</button>
+      </div>
+    </form>
+  </div>
+</div>

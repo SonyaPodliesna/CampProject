@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MaterialModule } from '../shared/material/material.module';
 import { MainNavComponent } from './main-nav.component';
+import { ProfileSettingsModule } from '../shared/modals/profile-settings/profile-settings.module';
+import { ChangePasswordModule } from '../shared/modals/change-password/change-password.module';
 
 const routes: Routes = [
   {
@@ -19,7 +21,9 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    MaterialModule
+    MaterialModule,
+    ProfileSettingsModule,
+    ChangePasswordModule
   ],
   exports: [MainNavComponent]
 })

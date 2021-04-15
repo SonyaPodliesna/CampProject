@@ -156,3 +156,54 @@ body {
     overflow: hidden;
   }
 }
+
+.profile-settings-dialog {
+  .mat-dialog-container {
+    box-shadow: none;
+    background-color: transparent;
+  }
+}
+
+.profile-settings-dialog {
+  .mat-form-field.mat-focused .mat-form-field-label {
+    color: #ffffff;
+  }
+
+  .mat-focused .mat-form-field-underline .mat-form-field-ripple {
+    background-color: #ffffff;
+  }
+}
+
+.profile-settings {
+  .mat-form-field {
+    .mat-form-field-infix {
+      width: 175px;
+    }
+  }
+}
+
+.change-password-dialog {
+  .mat-dialog-container {
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .mat-form-field.mat-focused .mat-form-field-label {
+    color: #ffffff;
+  }
+
+  .mat-focused .mat-form-field-underline .mat-form-field-ripple {
+    background-color: #ffffff;
+  }
+}
+
+input {
+  caret-color: white !important;
+}
+
+.backdropBackground {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}

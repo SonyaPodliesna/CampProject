@@ -6,22 +6,22 @@ import { MaterialModule } from '../../material/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 
 // Components
-import { RequestAchievementComponent } from './request-achievement.component';
+import { ProfileSettingsComponent } from './profile-settings.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: RequestAchievementComponent,
+    component: ProfileSettingsComponent,
   }
 ];
 
 @NgModule({
-  declarations: [RequestAchievementComponent],
+  declarations: [ProfileSettingsComponent],
   imports: [
     CommonModule,
     MaterialModule,
     ReactiveFormsModule
   ],
-  entryComponents: [RequestAchievementComponent]
+  exports: [ProfileSettingsComponent]
 })
-export class RequestAchievementModule { }
+export class ProfileSettingsModule { }

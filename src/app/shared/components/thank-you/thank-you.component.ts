@@ -16,6 +16,7 @@ export class ThankYouComponent {
     this.matDialog.open(OtherUserProfileComponent, {
       width: '800px',
       panelClass: 'other-profile-dialog',
+      backdropClass: 'backdropBackground',
       data: {
         userPic: this.user.userPic,
         userFirstName: this.user.firstName,

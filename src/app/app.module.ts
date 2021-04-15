@@ -8,8 +8,6 @@ import { MaterialModule } from './shared/material/material.module';
 // Components
 import { AppComponent } from './app.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
